@@ -37,7 +37,7 @@ snps_clean_snpsift_clinvar.vcf | grep CLNDN
 Получила огромный файл который я отсортировала с помощью команды:
 rg -om42 "CLNDN=[^;]*" snps_clean_snpsift_clinvar.vcf|sort|uniq -c|sort -rnk1|sed 's/not_specified//g;s/not_provided//g>
 и получила набор из 23 заболеваний к которым анализируемый человек предрасположен.
-(base) kjlkhl@Valentina:~/lab/Laboratory_journal/step_5$ rg -om42 "CLNDN=[^;]*" snps_clean_snpsift_clinvar.vcf|sort|uniq -c|sort -rnk1|sed 's/not_specified//g;s/not_provided//g'
+kjlkhl@Valentina:~/lab/Laboratory_journal/step_5$ rg -om42 "CLNDN=[^;]*" snps_clean_snpsift_clinvar.vcf|sort|uniq -c|sort -rnk1|sed 's/not_specified//g;s/not_provided//g'
 23 CLNDN=
       1 CLNDN=||Macrocephaly-intellectual_disability-neurodevelopmental_disorder-small_thorax_syndrome
       1 CLNDN=||Cataract_6_multiple_types
